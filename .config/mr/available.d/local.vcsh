@@ -1,2 +1,2 @@
 [$HOME/.config/vcsh/repo.d/local.git]
-checkout = vcsh clone git@github.com:jwhitley/tilde-local.git local
+checkout = vcsh clone https://github.com/jwhitley/tilde-local.git local
