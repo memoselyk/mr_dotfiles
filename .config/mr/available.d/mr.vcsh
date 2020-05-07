@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/config-mr.git]
+checkout = vcsh clone -b mr_init https://github.com/memoselyk/mr_dotfiles.git config-mr

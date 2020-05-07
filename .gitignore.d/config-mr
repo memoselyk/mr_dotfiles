@@ -1,0 +1,10 @@
+*
+!/.gitignore.d
+!/.gitignore.d/config-mr
+!/.config
+!/.config/mr
+!/.config/mr/available.d
+!/.config/mr/available.d/*
+!/.config/mr/config.d
+!/.config/mr/config.d/*
+!/.mrconfig
