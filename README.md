@@ -36,3 +36,6 @@ docker run -ti vcsh-home-test
 * https://github.com/jwhitley/vcsh-root
 * https://github.com/vdemeester/vcsh-home/tree/master
 * https://github.com/DancingQuanta/vcsh-config
+
+* https://github.com/geoffcorey/devbox-ansible
+* https://github.com/changyuheng/awesome-shell-1/blob/master/README.md
