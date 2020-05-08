@@ -80,9 +80,31 @@ checkout =
 push = :
 order = 15
 
+# =================================== Web development plugins ======================================
+# Quicker HTML/CSS creation with Emmet
+[.vim/bundle/emmet.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-emmet.git https://github.com/mattn/emmet-vim ~/.vim/bundle/emmet.vim
+push = :
+order = 15
+
+# Improved Javascript indentation and syntax support.
+[.vim/bundle/javascript.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-javascript.git https://github.com/pangloss/vim-javascript ~/.vim/bundle/javascript.vim
+push = :
+order = 15
+
 # Validation of JSON files with JSON Schema
 [.vim/bundle/vison-jsonschema]
 checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-vison-jsonschema.git https://github.com/Quramy/vison ~/.vim/bundle/vison-jsonschema
+push = :
+order = 15
+
+# Integrated search across vim - Installed for vision (?)
+[.vim/bundle/unite.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-unite.git https://github.com/Shougo/unite.vim ~/.vim/bundle/unite.vim
 push = :
 order = 15

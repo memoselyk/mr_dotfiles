@@ -64,6 +64,28 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
+"
+" vim-javascript config
+" General conceal settings. Will keep things concealed
+" even when your cursor is on top of them.
+set conceallevel=1
+set concealcursor=nvic
+
+" vim-javascript conceal settings.
+let g:javascript_conceal_function = "λ"
+let g:javascript_conceal_this = "@"
+let g:javascript_conceal_return = "<"
+let g:javascript_conceal_prototype = "#"
+"let g:javascript_conceal_function   = "ƒ"
+"let g:javascript_conceal_null       = "ø"
+"let g:javascript_conceal_this       = "@"
+"let g:javascript_conceal_return     = "⇚"
+"let g:javascript_conceal_undefined  = "¿"
+"let g:javascript_conceal_NaN        = "ℕ"
+"let g:javascript_conceal_prototype  = "¶"
+"let g:javascript_conceal_static     = "•"
+"let g:javascript_conceal_super      = "Ω"
+
 " PythonMode config
 let g:pymode_options_max_line_length = 99
 
