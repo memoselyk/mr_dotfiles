@@ -11,3 +11,11 @@ checkout =
    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-ctrlp.git https://github.com/ctrlpvim/ctrlp.vim ~/.vim/bundle/ctrlp.vim
 push = :
 order = 15
+
+# ================================ Editing and Navigation plugins ==================================
+# Better natigation in a file (and within Windows)
+[.vim/bundle/easymotion]
+checkout =
+   git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-easymotion.git https://github.com/easymotion/vim-easymotion.git ~/.vim/bundle/easymotion
+push = :
+order = 15
