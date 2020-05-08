@@ -3,3 +3,5 @@ git_gc = git gc "$@"
 jobs = 5
 
 include = cat ~/.config/mr/config.d/*
+include =
+    [ -d ~/.config/mr/3rd_party.d ] && cat ~/.config/mr/3rd_party.d/* || true
