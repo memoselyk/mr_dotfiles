@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# A combination of DancingQuanta/vcsh-config's
+#  - enable-sparse-checkout.sh
+#  - update-working-tree.sh
+
+set -e
+
+# If the vcsh repository does not exist, exit without doing anything.
+[ -d "$GIT_DIR" ] || exit 0
+
+git config core.sparseCheckout true
+rm -f "$GIT_DIR/info/sparse-checkout"
+ln -s "$HOME/.config/vcsh/sparse-checkout" "$GIT_DIR/info/sparse-checkout"
+
+# Remove excluded files
+git read-tree -mu HEAD

@@ -1,0 +1,8 @@
+/*
+!/.gitattributes
+!/.gitignore
+!/.gitmodules
+!/LICENSE*
+!/README*
+!/Dockerfile
+!docs
