@@ -1,4 +1,5 @@
 [$HOME/.config/vcsh/repo.d/config-mr.git]
-checkout = vcsh clone https://github.com/memoselyk/mr_dotfiles.git config-mr
+lib = VCSH_BRANCH="pushkinG-mr"
+checkout = vcsh clone -b $VCSH_BRANCH https://github.com/memoselyk/mr_dotfiles.git config-mr
 pre_update = git config --unset-all remote.origin.fetch && \
-    git config --add remote.origin.fetch "+refs/heads/master:refs/remotes/origin/master"
+    git config --add remote.origin.fetch "+refs/heads/$VCSH_BRANCH:refs/remotes/origin/$VCSH_BRANCH"
