@@ -71,3 +71,18 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-python-mode.git https://github.com/klen/python-mode ~/.vim/bundle/python-mode
 push = :
 order = 15
+
+# ===================================== JSON editing plugins =======================================
+# Improved JSON displaying (syntax coloring)
+[.vim/bundle/json-syntax.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-elzr-json.git https://github.com/elzr/vim-json ~/.vim/bundle/json-syntax.vim
+push = :
+order = 15
+
+# Validation of JSON files with JSON Schema
+[.vim/bundle/vison-jsonschema]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-vison-jsonschema.git https://github.com/Quramy/vison ~/.vim/bundle/vison-jsonschema
+push = :
+order = 15
