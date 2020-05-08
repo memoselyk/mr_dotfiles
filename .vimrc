@@ -23,3 +23,14 @@ filetype plugin indent on
 
 " NERDTree quick toggle
 nmap <leader>d :NERDTreeToggle<CR>
+
+" Ctrl+P config
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
+" CtrlP configuration
+let g:ctrlp_custom_ignore = '\.pyc$'
+
+" Exclude files and directories from CtrlP
+set wildignore+=*.class,*.pyc
