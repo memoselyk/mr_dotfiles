@@ -1,3 +1,10 @@
+# Default config for vim newcommers
+# sensible.vim: Defaults everyone can agree on
+[.vim/bundle/sensible.vim]
+checkout = git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-sensible.git https://github.com/tpope/vim-sensible.git ~/.vim/bundle/sensible.vim
+push = :
+order = 15
+
 # ========================== Source code/Files navigation and searching ============================
 # Improved file explorer
 [.vim/bundle/nerdtree.vim]
