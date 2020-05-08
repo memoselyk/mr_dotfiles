@@ -1,5 +1,11 @@
 *
 !/.gitignore.d
 !/.gitignore.d/zsh
+!/.config
+!/.config/mr
+!/.config/mr/available.d
+!/.config/mr/available.d/oh-my-zsh.vcsh
+!/.config/mr/config.d
+!/.config/mr/config.d/oh-my-zsh.vcsh
 !/.zsh*
 /.zsh_history
