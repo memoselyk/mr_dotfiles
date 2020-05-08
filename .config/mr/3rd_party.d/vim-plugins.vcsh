@@ -12,3 +12,11 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-ctrlp.git https://github.com/ctrlpvim/ctrlp.vim ~/.vim/bundle/ctrlp.vim
 push = :
 order = 15
+
+# Version control (git) integration
+# fugitive.vim: A Git wrapper so awesome, it should be illegal
+[.vim/bundle/fugitive.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-fugitive.git https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/fugitive.vim
+push = :
+order = 15
