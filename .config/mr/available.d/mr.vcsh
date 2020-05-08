@@ -1,5 +1,4 @@
 [$HOME/.config/vcsh/repo.d/config-mr.git]
-lib = VCSH_MASTER="mr_init"
-checkout = vcsh clone -b $VCSH_MASTER https://github.com/memoselyk/mr_dotfiles.git config-mr
+checkout = vcsh clone https://github.com/memoselyk/mr_dotfiles.git config-mr
 pre_update = git config --unset-all remote.origin.fetch && \
-    git config --add remote.origin.fetch "+refs/heads/$VCSH_MASTER:refs/remotes/origin/$VCSH_MASTER"
+    git config --add remote.origin.fetch "+refs/heads/master:refs/remotes/origin/master"

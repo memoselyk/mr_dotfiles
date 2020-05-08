@@ -22,6 +22,15 @@ cd .config/mr/config.d
 ln -s ../available.d/<name>.vcsh
 ```
 
+## Testing on docker
+
+The following commands can be used to test a fresh setup on an ubuntu system
+
+```
+docker build -t vcsh-home-test .
+docker run -ti vcsh-home-test
+```
+
 ### Lossely based on
 
 * https://github.com/jwhitley/vcsh-root
