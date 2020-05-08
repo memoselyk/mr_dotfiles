@@ -9,4 +9,4 @@ RUN useradd --shell /bin/zsh -u 1000 -m user
 
 USER user
 
-RUN vcsh clone https://github.com/memoselyk/mr_dotfiles.git config-mr
+RUN vcsh clone -b test_vimrc https://github.com/memoselyk/mr_dotfiles.git config-mr
