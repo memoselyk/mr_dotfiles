@@ -5,11 +5,24 @@
 [include]
 	path = ~/.gitconfig.local
 
+[core]
+	pager = less -FX
 [alias]
-	st = status
+	a = add
+	ap = add --patch
+	au = add -u
+	b = branch
+	c = commit
+	ca = commit --amend -C HEAD
+	cm = commit -m
 	co = checkout
-	sb = show-branch
+	cp = cherry-pick
+	d = diff
 	dc = diff --cached
+	ff = merge --ff-only
+	ls = log --oneline
+	sb = show-branch
+	st = status
 [core]
 	editor = vim
 [credential]
