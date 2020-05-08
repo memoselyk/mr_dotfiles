@@ -43,6 +43,14 @@ let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
+"
+" vim-easy-align config
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
 " Ctrl+P config
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
