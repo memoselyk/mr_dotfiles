@@ -1,0 +1,14 @@
+[user]
+# git config -f ~/.gitconfig.local user.name John Due
+# git config -f ~/.gitconfig.local user.email me@example.com
+
+[include]
+	path = ~/.gitconfig.local
+
+[alias]
+	st = status
+	co = checkout
+	sb = show-branch
+	dc = diff --cached
+[core]
+	editor = vim
