@@ -1,6 +1,10 @@
 *
 !/.gitignore.d
 !/.gitignore.d/vim
+!/.config
+!/.config/mr
+!/.config/mr/3rd_party.d
+!/.config/mr/3rd_party.d/vim-*
 !/.vim*/**
 /.vim/bundle
 !/.vim*
