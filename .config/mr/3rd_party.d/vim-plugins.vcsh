@@ -43,6 +43,13 @@ checkout =
 push = :
 order = 15
 
+# Auto-completion of quotes, parens, brackets, etc in ~Insert~ mode
+[.vim/bundle/delimitMate.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-delimitMate.git https://github.com/Raimondi/delimitMate ~/.vim/bundle/delimitMate.vim
+push = :
+order = 15
+
 # surround.vim: quoting/parenthesizing made simple
 [.vim/bundle/surround.vim]
 checkout =
