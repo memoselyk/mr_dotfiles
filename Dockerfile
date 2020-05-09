@@ -10,3 +10,6 @@ RUN useradd --shell /bin/zsh -u 1000 -m user
 USER user
 
 RUN vcsh clone https://github.com/memoselyk/mr_dotfiles.git config-mr
+
+# Enable vim configuration for testing
+RUN cd ~/.config/mr/config.d && ln -s ../available.d/vim.vcsh
