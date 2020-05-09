@@ -1,3 +1,9 @@
+" Normalize the home directory, since GVim on Windows can start up in some
+" very useless places.
+if (getcwd() == $VIMRUNTIME) || (getcwd() == "C:\\Windows\\system32")
+    cd $HOME
+endif
+
 "Personal Settings.
 set encoding=utf-8
 set nobackup
