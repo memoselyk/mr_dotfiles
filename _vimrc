@@ -150,6 +150,9 @@ let g:indentLine_char="¦"
 " NERDTree quick toggle
 nmap <leader>d :NERDTreeToggle<CR>
 
+" Diable auto logging insertion
+let g:EclimLoggingDisabled=1
+
 "
 " Vim-easy-align config
 " Start interactive EasyAlign in visual mode (e.g. vipga)
