@@ -1,6 +1,11 @@
 " Fix for SSH from windows machine (?)
 set t_Co=256
 
+" Personal Settings.
+call pathogen#infect()
+call pathogen#helptags()
+filetype plugin indent on
+
 " Common basic settings
 set number
 set ruler
