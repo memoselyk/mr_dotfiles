@@ -1,12 +1,5 @@
-# Dotfiles managed by VCSH
+# Vim config managed with VCSH/mr
 
-# Requirements
+## Usage
 
-* `git`
-* `vcsh`
-* `mr`
-
-## Lossely based on
-
-* https://github.com/jwhitley/vcsh-root
-* https://github.com/vdemeester/vcsh-home/tree/master
+Add this package to the `mr` repo/config.
