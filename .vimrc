@@ -38,6 +38,9 @@ au BufRead,BufNewFile ~/auto_tools/* let g:pymode_lint_ignore=join(automation_li
 au BufRead,BufNewFile ~/auto_tools/* let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'pylint']
 au BufRead,BufNewFile ~/auto_tools/* let g:pymode_lint_on_write = 0
 
+" Settings for xmledit plugin
+let g:xmledit_enable_html=1
+
 " Point to the correct snippets directory
 let g:UltiSnipsSnippetsDir="~/.vim/bundle/vim-snippets/UltiSnips"
 

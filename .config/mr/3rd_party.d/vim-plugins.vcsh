@@ -95,3 +95,18 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-python-mode.git https://github.com/klen/python-mode ~/.vim/bundle/python-mode
 push = :
 order = 15
+
+# =================================== Web development plugins ======================================
+# Quicker HTML/CSS creation with Emmet
+[.vim/bundle/emmet-vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-emmet.git https://github.com/mattn/emmet-vim.git ~/.vim/bundle/emmet-vim
+push = :
+order = 15
+
+# Easier XML editing, including tag completition and tag jumping
+[.vim/bundle/xmledit]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-xmledit.git https://github.com/sukima/xmledit.git ~/.vim/bundle/xmledit
+push = :
+order = 15
