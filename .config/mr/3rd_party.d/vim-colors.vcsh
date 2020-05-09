@@ -1,3 +1,31 @@
+# Port of the monokai scheme for TextMate
+[vimfiles/bundle/molokai]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-molokai.git https://github.com/vim-scripts/molokai.git ~/vimfiles/bundle/molokai
+push = :
+order = 15
+
+# Colorful Vim color scheme with 256 color terminal support.
+[vimfiles/bundle/vim-kolor]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-kolor.git https://github.com/zeis/vim-kolor ~/vimfiles/bundle/vim-kolor
+push = :
+order = 15
+
+# Eclipse like color scheme
+[vimfiles/bundle/eclipse.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-eclipse.git https://github.com/vim-scripts/eclipse.vim.git ~/vimfiles/bundle/eclipse.vim
+push = :
+order = 15
+
+# Dark gray color scheme sharing some similarities with Desert
+[vimfiles/bundle/Wombat]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-Wombat.git https://github.com/vim-scripts/Wombat.git ~/vimfiles/bundle/Wombat
+push = :
+order = 15
+
 # Solarized Colorscheme: Precision colors for machines and people
 [vimfiles/bundle/vim-colors-solarized]
 checkout =
