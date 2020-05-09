@@ -1,0 +1,7 @@
+=================================== Visual/Themes configuration ====================================
+# Better status bar
+[vimfiles/bundle/vim-airline]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-airline.git https://github.com/bling/vim-airline ~/vimfiles/bundle/vim-airline
+push = :
+order = 15
