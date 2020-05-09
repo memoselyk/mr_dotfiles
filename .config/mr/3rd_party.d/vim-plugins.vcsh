@@ -162,6 +162,14 @@ checkout =
 push = :
 order = 15
 
+# ================================== Scala development plugins =====================================
+# Integration Scala into Vim
+[vimfiles/bundle/vim-scala]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-scala.git https://github.com/derekwyatt/vim-scala ~/vimfiles/bundle/vim-scala
+push = :
+order = 15
+
 # =================================== Web development plugins ======================================
 # Easier XML editing, including tag completition and tag jumping
 [vimfiles/bundle/xmledit]
