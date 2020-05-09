@@ -176,6 +176,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+" IndentLine configuration
+let g:indentLine_char="¦"
+" let g:indentLine_color_gui = '#09AA08'
+
 " NERDTree quick toggle
 nmap <leader>d :NERDTreeToggle<CR>
 "

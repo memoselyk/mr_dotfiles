@@ -86,6 +86,13 @@ checkout =
 push = :
 order = 15
 
+# Display the indention levels with thin vertical lines
+[vimfiles/bundle/indentLine]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-indentLine.git https://github.com/Yggdroot/indentLine ~/vimfiles/bundle/indentLine
+push = :
+order = 15
+
 # Vertical alignment (e.g. align on assigment operator or for dictionaries)
 [.vim/bundle/easy-align.vim]
 checkout =
