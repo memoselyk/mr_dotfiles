@@ -58,6 +58,13 @@ checkout =
 push = :
 order = 15
 
+# Vertical alignment (e.g. align on assigment operator or for dictionaries)
+[.vim/bundle/vim-easy-align]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-easy-align.git https://github.com/junegunn/vim-easy-align ~/.vim/bundle/vim-easy-align
+push = :
+order = 15
+
 # ================================== Python development plugins ====================================
 # Python development (using default branch "develop")
 [.vim/bundle/python-mode]
