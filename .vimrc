@@ -116,6 +116,48 @@ filetype plugin indent on
 
 " ========================== Plug-in configuration =============================
 
+" Pymode specific settings
+let g:pymode_rope_autoimport = 0
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_lookup_project = 0
+"let g:pymode_options_max_line_length=99
+let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'pylint', 'mccabe']
+let g:pymode_lint_ignore = "W0201,C0111"
+
+" Specific lint configuration for Automation projects
+let automation_lint_ignore = []
+" ######## Disabling pep8 messages
+  call add(automation_lint_ignore, 'E20')    " whitespace before operator
+  call add(automation_lint_ignore, 'E121')   " Continuaion line ___-indented for ___ indent
+  call add(automation_lint_ignore, 'E126')   " Continuaion line ___-indented for ___ indent
+  call add(automation_lint_ignore, 'E128')   " Continuaion line ___-indented for ___ indent
+  call add(automation_lint_ignore, 'E221')   " Multiple spaces before operator
+  call add(automation_lint_ignore, 'E222')   " Multiple spaces after operator
+  call add(automation_lint_ignore, 'E262')   " Inline comment should start with '# '
+  call add(automation_lint_ignore, 'E265')   " Block comment should start with '# '
+  call add(automation_lint_ignore, 'E30')    " Expected X blanks found ...
+  call add(automation_lint_ignore, 'E501')   " line too long
+" ######## Disabling pylint messages
+  call add(automation_lint_ignore, 'C0301')   " line too long
+  call add(automation_lint_ignore, 'C0302')   " too many lines in module
+  call add(automation_lint_ignore, 'C0326')   " Wrong number of spaces around operator, bracket, coma
+  call add(automation_lint_ignore, 'C0330')   " Wrong continued indentation
+  call add(automation_lint_ignore, 'I0011')   " Locally disabling xxxxxx
+  call add(automation_lint_ignore, 'R0912')   " too many branches
+  call add(automation_lint_ignore, 'R0914')   " too many local variables
+  call add(automation_lint_ignore, 'R0923')   " Interface not implemented
+  call add(automation_lint_ignore, 'W0201')   " Attribute defined outside __init__
+  call add(automation_lint_ignore, 'W0511')   " Warning notes in comments, fixme, todo, etc
+  call add(automation_lint_ignore, 'W0703')   " Catching too general exception
+au BufRead,BufNewFile C:/Accurev/CORE/* let g:pymode_lint_ignore=join(automation_lint_ignore, ',')
+au BufRead,BufNewFile C:/Accurev/CORE/* let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'pylint']
+
+" pymode max line length cannot be set with autocommand
+if (match( getcwd() , 'C:.Accurev.CORE', 0, strlen('C:.Accurev.CORE')) )
+    let g:pymode_options_max_line_length=124
+    let g:pymode_lint_on_write = 0
+endif
+
 " Tagbar plugin requires ctags
 let g:tagbar_ctags_bin='C:\Tools\ctags58\ctags.exe'
 

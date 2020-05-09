@@ -80,3 +80,11 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-snippets.git https://github.com/honza/vim-snippets ~/vimfiles/bundle/vim-snippets
 push = :
 order = 15
+
+# ================================== Python development plugins ====================================
+# Python development (using default branch "develop")
+[vimfiles/bundle/python-mode]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-python-mode.git https://github.com/klen/python-mode ~/vimfiles/bundle/python-mode
+push = :
+order = 15
