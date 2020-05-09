@@ -1,3 +1,10 @@
+" BEGIN: Lines copied from $VIM/_vimrc
+set nocompatible
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+behave mswin
+" END: Lines copied from $VIM/_vimrc
+
 " Normalize the home directory, since GVim on Windows can start up in some
 " very useless places.
 if (getcwd() == $VIMRUNTIME) || (getcwd() == "C:\\Windows\\system32")
