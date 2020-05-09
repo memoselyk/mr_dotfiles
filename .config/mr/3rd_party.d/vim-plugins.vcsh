@@ -6,6 +6,28 @@ checkout =
 push = :
 order = 15
 
+# ================================ Editing and Navigation plugins ==================================
+# Better natigation in a file (and within Windows)
+[.vim/bundle/vim-easymotion]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-easymotion.git https://github.com/easymotion/vim-easymotion ~/.vim/bundle/vim-easymotion
+push = :
+order = 15
+
+# surround.vim: quoting/parenthesizing made simple
+[.vim/bundle/vim-surround]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-surround.git https://github.com/tpope/vim-surround ~/.vim/bundle/vim-surround
+push = :
+order = 15
+
+# Vertical alignment (e.g. align on assigment operator or for dictionaries)
+[.vim/bundle/vim-easy-align]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-easy-align.git https://github.com/junegunn/vim-easy-align ~/.vim/bundle/vim-easy-align
+push = :
+order = 15
+
 # ================================== Python development plugins ====================================
 # Python development (using default branch "develop")
 [.vim/bundle/python-mode]
