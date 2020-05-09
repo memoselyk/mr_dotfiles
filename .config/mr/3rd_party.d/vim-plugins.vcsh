@@ -116,6 +116,28 @@ checkout =
 push = :
 order = 15
 
+# ==================================== FileType configuration ======================================
+# For confluence markup syntax highlighthing
+[vimfiles/bundle/confluencewiki.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-confluencewiki.git https://github.com/vim-scripts/confluencewiki.vim ~/vimfiles/bundle/confluencewiki.vim
+push = :
+order = 15
+
+# To edit robotframework test files on Vim
+[vimfiles/bundle/robotframework-vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-robotframework.git https://github.com/mfukar/robotframework-vim ~/vimfiles/bundle/robotframework-vim
+push = :
+order = 15
+
+# Autohotkey syntax highlighting
+[vimfiles/bundle/autohotkey-ahk]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-autohotkey-ahk.git https://github.com/vim-scripts/autohotkey-ahk.git ~/vimfiles/bundle/autohotkey-ahk
+push = :
+order = 15
+
 # ================================== Python development plugins ====================================
 # Python development (using default branch "develop")
 [vimfiles/bundle/python-mode]
