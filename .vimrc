@@ -79,3 +79,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " For python, also highlight tab-based indentations
 au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
+
+" Enable spell checking in git commit
+au FileType gitcommit set spell
+au FileType gitcommit colorscheme wombat
