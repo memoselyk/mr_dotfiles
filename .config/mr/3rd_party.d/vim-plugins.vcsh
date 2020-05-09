@@ -77,3 +77,10 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-surround.git https://github.com/tpope/vim-surround ~/vimfiles/bundle/vim-surround
 push = :
 order = 15
+
+# Vertical alignment (e.g. align on assigment operator or for dictionaries)
+[vimfiles/bundle/vim-easy-align]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-easy-align.git https://github.com/junegunn/vim-easy-align ~/vimfiles/bundle/vim-easy-align
+push = :
+order = 15

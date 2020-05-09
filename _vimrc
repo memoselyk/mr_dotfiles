@@ -89,6 +89,14 @@ let g:tagbar_ctags_bin='C:\Tools\ctags58\ctags.exe'
 " NERDTree quick toggle
 nmap <leader>d :NERDTreeToggle<CR>
 
+"
+" Vim-easy-align config
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
 " Enable spell checking... hopefully it doesn't get annoying
 set spell spelllang=en_us
 
