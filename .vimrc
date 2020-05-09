@@ -29,3 +29,12 @@ filetype plugin indent on
 
 " CtrlP configuration
 let g:ctrlp_custom_ignore = '\.pyc$'
+
+" ======================== Autocommand customizations ==========================
+highlight BadWhitespace ctermbg=red guibg=red
+
+" Highlight trailing whitespace in a red color
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" For python, also highlight tab-based indentations
+au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
