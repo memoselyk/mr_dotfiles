@@ -2,6 +2,17 @@
 set encoding=utf-8
 set nobackup
 
+"Try improved autocompletion
+set wildmenu
+set wildmode=list:longest,full
+
+" Setting for Java editing
+" display indentation guides
+set list listchars=tab:→-,trail:·,extends:»,precedes:«,nbsp:×
+
+" Enable spell checking... hopefully it doesn't get annoying
+set spell spelllang=en_us
+
 "set line no, buffer, search, highlight, autoindent and more.
 set hidden
 set ignorecase
