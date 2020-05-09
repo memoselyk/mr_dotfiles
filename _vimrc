@@ -165,17 +165,17 @@ nmap ga <Plug>(EasyAlign)
 set spell spelllang=en_us
 
 "set line no, buffer, search, highlight, autoindent and more.
-set hidden
-set ignorecase
-set incsearch
-set smartcase
-set showmatch
-set autoindent
-set ruler
-set vb
-"set viminfo+=n$VIM/_viminfo
-set noerrorbells
-set showcmd
-set mouse=a
-set history=1000
-set undolevels=1000
+""TEMP"set hidden
+""TEMP"set ignorecase
+""TEMP"set incsearch
+""TEMP"set smartcase
+""TEMP"set showmatch
+""TEMP"set autoindent
+""TEMP"set ruler
+""TEMP"set vb
+""TEMP""set viminfo+=n$VIM/_viminfo
+""TEMP"set noerrorbells
+""TEMP"set showcmd
+""TEMP"set mouse=a
+""TEMP"set history=1000
+""TEMP"set undolevels=1000
