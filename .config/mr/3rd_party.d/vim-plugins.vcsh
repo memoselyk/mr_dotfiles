@@ -72,6 +72,13 @@ checkout =
 push = :
 order = 15
 
+# Syntax checking supporting many languages
+[.vim/bundle/syntastic]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-syntastic.git https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
+push = :
+order = 15
+
 # The ultimate snippet solution for Vim (Faster code creation)
 # This is the Snippet engine
 [.vim/bundle/ultisnips]
