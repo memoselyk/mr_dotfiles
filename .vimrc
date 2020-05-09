@@ -15,6 +15,10 @@ endif
 set wildmode=longest,list,full
 set wildmenu
 
+" Show invisible chars
+set listchars=tab:»·,trail:•
+set list
+
 " ========================= Activate plugin manager ============================
 " Load pathogen before filetype detection
 runtime bundle/00-pathogen/autoload/pathogen.vim
