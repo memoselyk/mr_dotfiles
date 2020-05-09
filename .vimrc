@@ -7,7 +7,9 @@ set incsearch
 
 " Show line numbers
 set number
-set relativenumber
+if exists("&relativenumber")
+  set relativenumber
+endif
 
 " Autocompletion on command bar (similar to bash)
 set wildmode=longest,list,full
