@@ -161,6 +161,9 @@ endif
 " Tagbar plugin requires ctags
 let g:tagbar_ctags_bin='C:\Tools\ctags58\ctags.exe'
 
+" Enable xmledit plugin for HTML
+let g:xmledit_enable_html=1
+
 " Point UltiSnips to the snip files location
 let g:UltiSnipsSnippetsDir="~/vimfiles/bundle/vim-snippets/UltiSnips"
 

@@ -88,3 +88,11 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-python-mode.git https://github.com/klen/python-mode ~/vimfiles/bundle/python-mode
 push = :
 order = 15
+
+# =================================== Web development plugins ======================================
+# Easier XML editing, including tag completition and tag jumping
+[vimfiles/bundle/xmledit]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-xmledit.git https://github.com/sukima/xmledit.git ~/vimfiles/bundle/xmledit
+push = :
+order = 15
