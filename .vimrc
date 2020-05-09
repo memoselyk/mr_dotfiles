@@ -31,3 +31,11 @@ endfunction
 exec "source ".Dot_vim("plugin-manager/plug.vim")
 exec "source ".Dot_vim("bootstrap/bundles.vim")
 " }}}
+
+" ================ Plug-in configuration =============== {{{
+
+  " CtrlP configuration {{{
+let g:ctrlp_custom_ignore = '\.pyc$'
+  " }}}
+
+" }}}

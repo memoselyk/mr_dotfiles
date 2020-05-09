@@ -13,6 +13,9 @@ call plug#begin(s:bundle_home)
   " Files (source code) navigation {{{
 " Improved file explorer
 Plug 'preservim/nerdtree'
+
+" Fuzzy search of files
+Plug 'ctrlpvim/ctrlp.vim'
   "}}}
 " }}}
 
