@@ -1,0 +1,7 @@
+# ========================== Source code/Files navigation and searching ============================
+# Improved file explorer
+[.vim/bundle/nerdtree.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-nerdtree.git https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree.vim
+push = :
+order = 15
