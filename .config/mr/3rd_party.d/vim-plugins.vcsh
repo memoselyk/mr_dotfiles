@@ -65,6 +65,13 @@ checkout =
 push = :
 order = 15
 
+# Symbols navigation/visualization
+[.vim/bundle/tagbar]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-tagbar.git https://github.com/majutsushi/tagbar ~/.vim/bundle/tagbar
+push = :
+order = 15
+
 # ================================== Python development plugins ====================================
 # Python development (using default branch "develop")
 [.vim/bundle/python-mode]
