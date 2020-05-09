@@ -70,3 +70,10 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-easymotion.git https://github.com/easymotion/vim-easymotion ~/vimfiles/bundle/vim-easymotion
 push = :
 order = 15
+
+# surround.vim: quoting/parenthesizing made simple
+[vimfiles/bundle/vim-surround]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-surround.git https://github.com/tpope/vim-surround ~/vimfiles/bundle/vim-surround
+push = :
+order = 15
