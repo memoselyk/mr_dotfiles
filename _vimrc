@@ -80,6 +80,9 @@ colorscheme solarized
 " Load togglebg plugin (which is not loaded automatically)
 call togglebg#map("")
 
+" NERDTree quick toggle
+nmap <leader>d :NERDTreeToggle<CR>
+
 " Enable spell checking... hopefully it doesn't get annoying
 set spell spelllang=en_us
 

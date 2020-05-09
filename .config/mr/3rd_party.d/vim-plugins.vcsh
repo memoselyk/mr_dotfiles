@@ -40,3 +40,11 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-colors-solarized.git https://github.com/altercation/vim-colors-solarized.git ~/vimfiles/bundle/vim-colors-solarized
 push = :
 order = 15
+
+# ========================== Source code/Files navigation and searching ============================
+# Improved file explorer
+[vimfiles/bundle/nerdtree]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-nerdtree.git https://github.com/scrooloose/nerdtree.git ~/vimfiles/bundle/nerdtree
+push = :
+order = 15
