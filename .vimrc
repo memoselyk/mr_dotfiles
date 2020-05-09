@@ -119,6 +119,18 @@ filetype plugin indent on
 " Tagbar plugin requires ctags
 let g:tagbar_ctags_bin='C:\Tools\ctags58\ctags.exe'
 
+" Point UltiSnips to the snip files location
+let g:UltiSnipsSnippetsDir="~/vimfiles/bundle/vim-snippets/UltiSnips"
+
+" TODO Could not get <tab> to work, using ctrl+j instead (let g:UltiSnipsExpandTrigger="<tab>")
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsListSnippets="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 " NERDTree quick toggle
 nmap <leader>d :NERDTreeToggle<CR>
 "

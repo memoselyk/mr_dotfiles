@@ -64,3 +64,19 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-easy-align.git https://github.com/junegunn/vim-easy-align ~/.vim/bundle/easy-align.vim
 push = :
 order = 15
+
+# The ultimate snippet solution for Vim (Faster code creation)
+# This is the Snippet engine
+[vimfiles/bundle/ultisnips]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-ultisnips.git https://github.com/SirVer/ultisnips.git ~/vimfiles/bundle/ultisnips
+push = :
+order = 15
+
+# Snipets from different programming languages
+# Snippets data for ultisnips
+[vimfiles/bundle/vim-snippets]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-snippets.git https://github.com/honza/vim-snippets ~/vimfiles/bundle/vim-snippets
+push = :
+order = 15
