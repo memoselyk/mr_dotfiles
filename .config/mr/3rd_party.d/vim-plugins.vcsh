@@ -52,7 +52,7 @@ order = 15
 # Fuzzy search of files
 [vimfiles/bundle/ctrlp.vim]
 checkout =
-    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-ctrlp.vim.git https://github.com/ctrlpvim/ctrlp.vim ~/vimfiles/bundle/ctrlp.vim
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-ctrlp.git https://github.com/ctrlpvim/ctrlp.vim ~/vimfiles/bundle/ctrlp.vim
 push = :
 order = 15
 
