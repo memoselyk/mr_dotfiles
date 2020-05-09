@@ -20,3 +20,8 @@ set wildmenu
 runtime bundle/00-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 filetype plugin indent on
+
+" ========================== Plug-in configuration =============================
+
+" CtrlP configuration
+let g:ctrlp_custom_ignore = '\.pyc$'
