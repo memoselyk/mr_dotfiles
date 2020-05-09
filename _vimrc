@@ -1,4 +1,8 @@
 "Personal Settings.
+call pathogen#infect()
+call pathogen#helptags()
+filetype plugin indent on
+
 set number
 set encoding=utf-8
 set nobackup
