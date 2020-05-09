@@ -13,6 +13,14 @@ set relativenumber
 set wildmode=longest,list,full
 set wildmenu
 
+" Fix for SSH from windows machine (?)
+set t_Co=256
+
+" Common basic settings
+set ruler
+set encoding=utf-8
+set backspace=indent,eol,start
+
 " ========================= Activate plugin manager ============================
 " Load pathogen before filetype detection
 runtime bundle/00-pathogen/autoload/pathogen.vim
