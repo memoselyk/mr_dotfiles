@@ -53,6 +53,21 @@ set wildmode=list:longest,full
 " display indentation guides
 set list listchars=tab:→-,trail:·,extends:»,precedes:«,nbsp:×
 
+"Required to enable airline plug-in
+set laststatus=2
+
+" Enable powerline fonts for Vim-airline
+if has ('win32')
+    set guifont=Powerline_Consolas:h9:cANSI
+else
+    set guifont=Powerline\ Consolas\ 10
+endif
+let g:airline_powerline_fonts = 1
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme             = 'powerlineish'
+" let g:airline_theme             = 'wombat'
+
 " Enable spell checking... hopefully it doesn't get annoying
 set spell spelllang=en_us
 
