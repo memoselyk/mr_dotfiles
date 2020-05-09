@@ -8,3 +8,7 @@ set incsearch
 " Show line numbers
 set number
 set relativenumber
+
+" Autocompletion on command bar (similar to bash)
+set wildmode=longest,list,full
+set wildmenu
