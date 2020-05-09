@@ -20,6 +20,11 @@ set relativenumber
 set laststatus=2
 let g:airline_theme = 'wombat'
 
+if has("autocmd")
+    autocmd FileType htmldjango set tabstop=4|set shiftwidth=4|set expandtab|set smarttab
+    autocmd FileType html       set tabstop=4|set shiftwidth=4|set expandtab|set smarttab
+endif
+
 " Pymode specific settings
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_options_max_line_length = 99
@@ -57,3 +62,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+
+" Merlin installation
+" let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+" execute "set rtp+=" . g:opamshare . "/merlin/vim"
+" execute "set rtp+=" . g:opamshare . "/vimbufsync"
+" execute "helptags " . g:opamshare . "/merlin/vim/doc"
+" let g:syntastic_ocaml_checkers=['merlin']
