@@ -220,3 +220,6 @@ let g:ctrlp_custom_ignore = '\.pyc$'
 
 " Exclude files and directories from CtrlP
 set wildignore+=*.class,*.pyc
+
+" Diable auto logging insertion
+let g:EclimLoggingDisabled=1
