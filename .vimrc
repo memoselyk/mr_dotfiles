@@ -1,4 +1,8 @@
 " =================== General settings ================= {{{
+" Make non-ascii listchars to work
+set encoding=utf-8
+scriptencoding utf-8
+
 " Enabled syntax highlighthing
 syntax on
 
@@ -14,6 +18,10 @@ endif
 " Autocompletion on command bar (similar to bash)
 set wildmode=longest,list,full
 set wildmenu
+
+" Show invisible chars
+set listchars=tab:»·,trail:•
+set list
 " }}}
 
 " ============== Plugin manager activation ============= {{{
