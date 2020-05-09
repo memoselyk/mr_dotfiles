@@ -79,6 +79,13 @@ checkout =
 push = :
 order = 15
 
+# Switch off relativenumbers on unfocused windows
+[vimfiles/bundle/vim-numbertoggle]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-numbertoggle.git https://github.com/jeffkreeftmeijer/vim-numbertoggle.git ~/vimfiles/bundle/vim-numbertoggle
+push = :
+order = 15
+
 # Vertical alignment (e.g. align on assigment operator or for dictionaries)
 [.vim/bundle/easy-align.vim]
 checkout =
