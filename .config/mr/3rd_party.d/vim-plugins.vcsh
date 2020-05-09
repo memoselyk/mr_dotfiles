@@ -138,6 +138,22 @@ checkout =
 push = :
 order = 15
 
+# ==================================== org-mode files editing ======================================
+# Text outlining and task management for Vim based on Emacs' Org-Mode
+[vimfiles/bundle/vim-orgmode]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-orgmode.git https://github.com/jceb/vim-orgmode ~/vimfiles/bundle/vim-orgmode
+push = :
+order = 15
+
+# Shortcuts to increment dates/time
+# Required by orgmode
+[vimfiles/bundle/vim-speeddating]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-speeddating.git https://github.com/tpope/vim-speeddating ~/vimfiles/bundle/vim-speeddating
+push = :
+order = 15
+
 # ================================== Python development plugins ====================================
 # Python development (using default branch "develop")
 [vimfiles/bundle/python-mode]
