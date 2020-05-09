@@ -49,3 +49,11 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-easy-align.git https://github.com/junegunn/vim-easy-align ~/.vim/bundle/easy-align.vim
 push = :
 order = 15
+
+# ================================== Python development plugins ====================================
+# Python development (using default branch "develop")
+[.vim/bundle/python-mode]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-python-mode.git https://github.com/klen/python-mode ~/.vim/bundle/python-mode
+push = :
+order = 15
