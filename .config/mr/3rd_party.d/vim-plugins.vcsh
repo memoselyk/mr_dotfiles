@@ -48,3 +48,10 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-nerdtree.git https://github.com/scrooloose/nerdtree.git ~/vimfiles/bundle/nerdtree
 push = :
 order = 15
+
+# Fuzzy search of files
+[vimfiles/bundle/ctrlp.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-ctrlp.vim.git https://github.com/ctrlpvim/ctrlp.vim ~/vimfiles/bundle/ctrlp.vim
+push = :
+order = 15

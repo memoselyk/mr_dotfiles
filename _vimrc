@@ -54,6 +54,9 @@ set nobackup
 set wildmenu
 set wildmode=list:longest,full
 
+" Exclude files and directories from CtrlP
+set wildignore+=*.class,*.pyc
+
 " Setting for Java editing
 " display indentation guides
 set list listchars=tab:→-,trail:·,extends:»,precedes:«,nbsp:×
