@@ -15,6 +15,9 @@ endif
 set wildmode=longest,list,full
 set wildmenu
 
+" Remember more history
+set history=10000
+
 " Show invisible chars
 set listchars=tab:»·,trail:•
 set list
