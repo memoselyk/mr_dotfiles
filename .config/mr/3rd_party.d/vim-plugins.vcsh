@@ -49,3 +49,9 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-easy-align.git https://github.com/junegunn/vim-easy-align ~/.vim/bundle/easy-align.vim
 push = :
 order = 15
+# Display the indention levels with thin vertical lines
+[.vim/bundle/indentLine.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-indentLine.git https://github.com/Yggdroot/indentLine.git ~/.vim/bundle/indentLine.vim
+push = :
+order = 15
