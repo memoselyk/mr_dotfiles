@@ -12,3 +12,13 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-ctrlp.git https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 push = :
 order = 15
+
+# ================================ Editing and Navigation plugins ==================================
+# Better natigation in a file (and within Windows)
+
+# Display the indention levels with thin vertical lines
+[.vim/bundle/indentLine.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-indentLine.git https://github.com/Yggdroot/indentLine.git ~/.vim/bundle/indentLine.vim
+push = :
+order = 15
