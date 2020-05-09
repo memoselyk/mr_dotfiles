@@ -38,6 +38,18 @@ au BufRead,BufNewFile ~/auto_tools/* let g:pymode_lint_ignore=join(automation_li
 au BufRead,BufNewFile ~/auto_tools/* let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'pylint']
 au BufRead,BufNewFile ~/auto_tools/* let g:pymode_lint_on_write = 0
 
+" Point to the correct snippets directory
+let g:UltiSnipsSnippetsDir="~/.vim/bundle/vim-snippets/UltiSnips"
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsListSnippets="<C-e>"
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<C-j>"
+let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 " ========================= Activate plugin manager ============================
 " Load pathogen before filetype detection
 runtime bundle/00-pathogen/autoload/pathogen.vim
