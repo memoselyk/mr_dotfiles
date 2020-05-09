@@ -68,6 +68,13 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme             = 'powerlineish'
 " let g:airline_theme             = 'wombat'
 
+"Set Color Scheme (solarized)
+let g:solarized_italic=0
+colorscheme solarized
+
+" Load togglebg plugin (which is not loaded automatically)
+call togglebg#map("")
+
 " Enable spell checking... hopefully it doesn't get annoying
 set spell spelllang=en_us
 

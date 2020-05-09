@@ -1,0 +1,6 @@
+# Solarized Colorscheme: Precision colors for machines and people
+[vimfiles/bundle/vim-colors-solarized]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-colors-solarized.git https://github.com/altercation/vim-colors-solarized.git ~/vimfiles/bundle/vim-colors-solarized
+push = :
+order = 15
