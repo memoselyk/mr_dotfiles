@@ -116,6 +116,9 @@ filetype plugin indent on
 
 " ========================== Plug-in configuration =============================
 
+" Tagbar plugin requires ctags
+let g:tagbar_ctags_bin='C:\Tools\ctags58\ctags.exe'
+
 " NERDTree quick toggle
 nmap <leader>d :NERDTreeToggle<CR>
 "

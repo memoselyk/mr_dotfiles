@@ -28,6 +28,13 @@ checkout =
 push = :
 order = 15
 
+# Symbols navigation/visualization
+[vimfiles/bundle/tagbar]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-tagbar.git https://github.com/majutsushi/tagbar ~/vimfiles/bundle/tagbar
+push = :
+order = 15
+
 # ================================= Visual/Themes configuration ====================================
 # Better status bar
 [vimfiles/bundle/vim-airline]
