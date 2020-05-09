@@ -35,6 +35,13 @@ checkout =
 push = :
 order = 15
 
+# VOoM (Vim Outliner of Markups), a plugin for Vim that emulates a two-pane text outliner.
+[vimfiles/bundle/VOoM]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-VOoM.git https://github.com/vim-scripts/VOoM.git ~/vimfiles/bundle/VOoM
+push = :
+order = 15
+
 # ================================= Visual/Themes configuration ====================================
 # Better status bar
 [vimfiles/bundle/vim-airline]
