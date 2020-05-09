@@ -58,6 +58,13 @@ checkout =
 push = :
 order = 15
 
+# TextMate-like insert closing pair for brackets, parens, quotes (needs python)
+[vimfiles/bundle/simple-pairs]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-simple-pairs.git https://github.com/vim-scripts/simple-pairs.git ~/vimfiles/bundle/simple-pairs
+push = :
+order = 15
+
 # surround.vim: quoting/parenthesizing made simple
 [.vim/bundle/surround.vim]
 checkout =
