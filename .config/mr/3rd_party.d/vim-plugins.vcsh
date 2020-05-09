@@ -1,3 +1,11 @@
+# ================================== Visual/Theme configuration ====================================
+# Better status bar
+[.vim/bundle/vim-airline]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-airline.git https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+push = :
+order = 15
+
 # ================================== Python development plugins ====================================
 # Python development (using default branch "develop")
 [.vim/bundle/python-mode]

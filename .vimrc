@@ -16,6 +16,10 @@ set wildmode=longest,list,full
 set wildmenu
 set relativenumber
 
+"Required to enable airline plugin
+set laststatus=2
+let g:airline_theme = 'wombat'
+
 " Pymode specific settings
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_options_max_line_length = 99
