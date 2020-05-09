@@ -28,6 +28,14 @@ checkout =
 push = :
 order = 15
 
+# ================================== Visual/Theme configuration ====================================
+# Better status bar
+[.vim/bundle/vim-airline]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-airline.git https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+push = :
+order = 15
+
 # ================================ Editing and Navigation plugins ==================================
 # Better natigation in a file (and within Windows)
 [.vim/bundle/vim-easymotion]
