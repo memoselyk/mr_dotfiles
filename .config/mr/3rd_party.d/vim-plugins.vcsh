@@ -21,6 +21,13 @@ checkout =
 push = :
 order = 15
 
+# Eclipse like task list (from to do comments/lines)
+[vimfiles/bundle/TaskList.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-TaskList.git https://github.com/vim-scripts/TaskList.vim.git ~/vimfiles/bundle/TaskList.vim
+push = :
+order = 15
+
 # ================================ Editing and Navigation plugins ==================================
 # Better natigation in a file (and within Windows)
 [.vim/bundle/vim-easymotion]
