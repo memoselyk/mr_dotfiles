@@ -12,3 +12,9 @@ set relativenumber
 " Autocompletion on command bar (similar to bash)
 set wildmode=longest,list,full
 set wildmenu
+
+" ========================= Activate plugin manager ============================
+" Load pathogen before filetype detection
+runtime bundle/00-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+filetype plugin indent on
