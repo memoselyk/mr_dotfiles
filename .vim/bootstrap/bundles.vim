@@ -10,6 +10,14 @@ endif
 call plug#begin(s:bundle_home)
 
 " Add plugins here {{{
+
+  " Files (source code) navigation {{{
+
+" fugitive.vim: A Git wrapper so awesome, it should be illegal
+Plug 'tpope/vim-fugitive'
+
+  "}}}
+
 " }}}
 
 if exists("s:bootstrap") && s:bootstrap
