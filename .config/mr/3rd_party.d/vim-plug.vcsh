@@ -1,0 +1,5 @@
+[.vim/plugin-manager]
+checkout =
+    git clone --depth=1 https://github.com/junegunn/vim-plug.git ~/.vim/plugin-manager
+push = :
+order = 12
