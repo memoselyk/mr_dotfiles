@@ -1,5 +1,13 @@
 *
 !/.gitignore.d
 !/.gitignore.d/vim
+!/.config
+!/.config/mr
+!/.config/mr/3rd_party.d
+!/.config/mr/3rd_party.d/vim-*
+!/.vim*/**
+/.vim/.netrwhist
+/.vim/bundle
+/.vim/plugin-manager/
 !/.vim*
 /.viminfo
