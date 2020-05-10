@@ -24,6 +24,9 @@ Plug 'preservim/nerdtree'
 
 " Fuzzy search of files
 Plug 'ctrlpvim/ctrlp.vim'
+
+" fugitive.vim: A Git wrapper so awesome, it should be illegal
+Plug 'tpope/vim-fugitive'
   "}}}
 
   " Editing (aesthetics, code creation and in-file moving) plugins {{{
