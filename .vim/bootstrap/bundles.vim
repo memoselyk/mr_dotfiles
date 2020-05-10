@@ -10,6 +10,14 @@ endif
 call plug#begin(s:bundle_home)
 
 " Add plugins here {{{
+  " Color schemes {{{
+" Dark gray color scheme sharing some similarities with Desert
+Plug 'vim-scripts/Wombat'
+
+" Solarized Colorscheme: Precision colors for machines and people
+Plug 'altercation/vim-colors-solarized'
+  "}}}
+
   " Files (source code) navigation {{{
 " Improved file explorer
 Plug 'preservim/nerdtree'
