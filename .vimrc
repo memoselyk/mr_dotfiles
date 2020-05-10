@@ -23,8 +23,13 @@ set wildmenu
 set history=10000
 
 " Show invisible chars
-set listchars=tab:»·,trail:•
+set listchars=tab:»·,nbsp:␣,trail:•
 set list
+
+" Invisible character colors
+highlight CursorLineNr cterm=none ctermfg=0 guifg=#073642
+highlight NonText cterm=none ctermfg=0 ctermbg=8 guifg=#073642
+highlight SpecialKey cterm=none ctermfg=0 guifg=#073642 ctermbg=8 guibg=#002b36
 " }}}
 
 " ============== Plugin manager activation ============= {{{
