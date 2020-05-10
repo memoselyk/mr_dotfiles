@@ -25,6 +25,11 @@ Plug 'preservim/nerdtree'
 " Fuzzy search of files
 Plug 'ctrlpvim/ctrlp.vim'
   "}}}
+
+  " Editing (aesthetics, code creation and in-file moving) plugins {{{
+" Display the indention levels with thin vertical lines
+Plug 'Yggdroot/indentLine'
+  "}}}
 " }}}
 
 if exists("s:bootstrap") && s:bootstrap
