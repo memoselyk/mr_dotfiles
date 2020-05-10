@@ -11,7 +11,12 @@ set -e
 
 git config core.sparseCheckout true
 rm -f "$GIT_DIR/info/sparse-checkout"
-ln -s "$HOME/.config/vcsh/sparse-checkout" "$GIT_DIR/info/sparse-checkout"
+
+sparse_config="$HOME/.config/vcsh/$VCSH_REPO_NAME.sparse-checkout"
+if [ ! -f "$sparse_config" ]; then
+  sparse_config="$HOME/.config/vcsh/sparse-checkout"
+fi
+ln -s "$sparse_config" "$GIT_DIR/info/sparse-checkout"
 
 # Remove excluded files
 git read-tree -mu HEAD
