@@ -10,6 +10,10 @@ endif
 call plug#begin(s:bundle_home)
 
 " Add plugins here {{{
+  " Files (source code) navigation {{{
+" Improved file explorer
+Plug 'preservim/nerdtree'
+  "}}}
 " }}}
 
 if exists("s:bootstrap") && s:bootstrap
