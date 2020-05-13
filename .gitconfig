@@ -9,6 +9,7 @@
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore_global
+	pager = less -FX
 [alias]
 	a = add
 	ap = add --patch
