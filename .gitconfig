@@ -28,6 +28,7 @@
 	dw = diff --color-words
 	dww = diff --color-words='[A-Za-z0-9_]+|.'
 	ff = merge --ff-only
+	gb = "!f(){ git branch | grep $1 | tr -d \\*\\+ | xargs git show-branch; }; f"
 	ls = log --oneline
 	sb = show-branch
 	st = status
