@@ -1,0 +1,5 @@
+[$HOME/.config/vcsh/repo.d/dot-git.git]
+lib = VCSH_BRANCH="git"
+checkout = vcsh clone -b $VCSH_BRANCH https://github.com/memoselyk/mr_dotfiles.git dot-git
+pre_update = git config --unset-all remote.origin.fetch && \
+    git config --add remote.origin.fetch "+refs/heads/$VCSH_BRANCH:refs/remotes/origin/$VCSH_BRANCH"
