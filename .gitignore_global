@@ -1,2 +1,4 @@
 # vim temp files
 .*.sw[op]
+# Tools metadata
+.ropeproject/
