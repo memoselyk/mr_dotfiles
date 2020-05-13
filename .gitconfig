@@ -18,8 +18,10 @@
 	c = commit
 	cm = commit -m
 	co = checkout
+	cp = cherry-pick
 	d = diff
 	dc = diff --cached
 	ff = merge --ff-only
+	ls = log --oneline
 	sb = show-branch
 	st = status
