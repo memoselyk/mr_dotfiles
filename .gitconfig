@@ -10,7 +10,14 @@
 [core]
 	excludesfile = ~/.gitignore_global
 [alias]
+	a = add
+	ap = add --patch
+	au = add -u
+	b = branch
+	c = commit
+	cm = commit -m
 	co = checkout
+	d = diff
 	dc = diff --cached
 	ff = merge --ff-only
 	sb = show-branch
