@@ -1,5 +1,5 @@
 [.vim/plugin-manager]
 checkout =
-    git clone --depth=1 --separate-git-dir ~/.config/vcsh/repo.d/vim-plug.git https://github.com/junegunn/vim-plug.git ~/.vim/plugin-manager
+    VCSH_BASE=~/.vim/plugin-manager vcsh clone --depth=1 https://github.com/junegunn/vim-plug.git dot-vim-plug
 push = :
 order = 12
