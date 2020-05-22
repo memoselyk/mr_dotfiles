@@ -1,4 +1,4 @@
-[.vim/plugin-manager]
+[$HOME/.config/vcsh/repo.d/dot-vim-plug.git]
 checkout =
     VCSH_BASE=~/.vim/plugin-manager vcsh clone https://github.com/junegunn/vim-plug.git dot-vim-plug
 push = :
