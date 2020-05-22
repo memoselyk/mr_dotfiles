@@ -1,5 +1,5 @@
 [.vim/plugin-manager]
 checkout =
-    VCSH_BASE=~/.vim/plugin-manager vcsh clone --depth=1 https://github.com/junegunn/vim-plug.git dot-vim-plug
+    VCSH_BASE=~/.vim/plugin-manager vcsh clone https://github.com/junegunn/vim-plug.git dot-vim-plug
 push = :
 order = 12
