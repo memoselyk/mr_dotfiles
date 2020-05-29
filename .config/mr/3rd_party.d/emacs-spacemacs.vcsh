@@ -1,0 +1,4 @@
+[.emacs.d]
+checkout = git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+push = :
+order = 12

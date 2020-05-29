@@ -1,0 +1,8 @@
+*
+!/.gitignore.d
+!/.gitignore.d/emacs
+!/.config
+!/.config/mr
+!/.config/mr/3rd_party.d
+!/.config/mr/3rd_party.d/emacs-*
+!/.spacemacs
