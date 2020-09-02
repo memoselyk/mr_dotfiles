@@ -80,7 +80,13 @@ ZSH_THEME="${ZSH_THEME:-random}"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  # From: https://github.com/zsh-users/zsh-syntax-highlighting
+  zsh-syntax-highlighting
+  # From: https://github.com/zsh-users/zsh-autosuggestions
+  zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 

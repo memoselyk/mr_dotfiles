@@ -1,5 +1,9 @@
 *
 !/.gitignore.d
 !/.gitignore.d/dot-zsh
+!/.config
+!/.config/mr
+!/.config/mr/3rd_party.d
+!/.config/mr/3rd_party.d/zsh-*
 !/.zshrc
 !/.p10k.zsh
