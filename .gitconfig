@@ -31,6 +31,7 @@
 	gb = "!f(){ git branch | grep $1 | tr -d \\*\\+ | xargs git show-branch; }; f"
 	ls = log --oneline
 	sb = show-branch
+	sbs = "!echo HEAD @{upstream} | xargs -L 1 git rev-parse --abbrev-ref | xargs git show-branch"
 	st = status
 	which-remote = rev-parse --abbrev-ref --symbolic-full-name @{u}
 [diff "gpg"]
