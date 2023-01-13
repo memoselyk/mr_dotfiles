@@ -187,12 +187,18 @@ require('lazy').setup {
           local map = function(keys, func, desc)
             vim.keymap.set('n', keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
           end
+          -- Used in charliesbot's keymaps
+          local opts = { buffer = event.buf, remap = false }
 
           -- Jump to the definition of the word under your cursor.
           map('<leader>gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
 
           -- Find references for the word under your cursor.
           map('<leader>gr', vim.lsp.buf.references, '[G]oto [R]eferences')
+
+          vim.keymap.set('n', '<leader>vws', vim.lsp.buf.workspace_symbol, opts)
+
+          vim.keymap.set('n', '<leader>vrn', vim.lsp.buf.rename, opts)
 
           -- Execute a code action, usually your cursor needs to be on top of an error
           -- or a suggestion from your LSP for this to activate.
@@ -201,6 +207,12 @@ require('lazy').setup {
           -- Opens a popup that displays documentation about the word under your cursor
           --  See `:help K` for why this keymap
           map('K', vim.lsp.buf.hover, 'Hover Documentation')
+
+          -- Mapping defined by charliesbot
+          vim.keymap.set('n', '<leader>sh', vim.lsp.buf.signature_help, opts)
+          vim.keymap.set('n', '<leader>vd', vim.diagnostic.open_float, opts)
+          vim.keymap.set('n', '<leader>n', vim.diagnostic.goto_next, opts)
+          vim.keymap.set('n', '<leader>m', vim.diagnostic.goto_prev, opts)
 
           -- The following two autocommands are used to highlight references of the
           -- word under your cursor when your cursor rests there for a little while.
