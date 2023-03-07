@@ -16,6 +16,7 @@
 	ap = add --patch
 	au = add -u
 	b = branch
+	bas = "!f(){ git branch --contains=${1-HEAD} | tr -d \\*\\+ | xargs git show-branch $2; }; f"
 	c = commit
 	cm = commit -m
 	co = checkout
