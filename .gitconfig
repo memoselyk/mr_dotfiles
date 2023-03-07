@@ -22,6 +22,8 @@
 	cp = cherry-pick
 	d = diff
 	dc = diff --cached
+	dcw = diff --cached --color-words
+	dcww = diff --cached --color-words='[A-Za-z0-9_]+|.'
 	ff = merge --ff-only
 	ls = log --oneline
 	sb = show-branch
