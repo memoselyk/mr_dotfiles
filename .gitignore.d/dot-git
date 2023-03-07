@@ -1,0 +1,7 @@
+*
+!/.git**/*
+/.gitconfig.local
+/.gitignore.d/*
+!/.gitignore.d/dot-git
+/.gitattributes.d/*
+!/.gitattributes.d/dot-git
