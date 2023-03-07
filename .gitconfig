@@ -33,3 +33,6 @@
 [init]
 	# As of 2.28 default branch name must be specified
 	defaultBranch = master
+[pull]
+	# For git 2.27+, specify let pull always resolve with rebase
+	rebase = true
