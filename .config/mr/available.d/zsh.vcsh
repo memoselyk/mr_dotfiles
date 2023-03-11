@@ -3,3 +3,6 @@ lib = VCSH_BRANCH="dot-zsh"
 checkout = vcsh clone -b $VCSH_BRANCH https://github.com/memoselyk/mr_dotfiles.git dot-zsh
 pre_update = git config --unset-all remote.origin.fetch && \
     git config --add remote.origin.fetch "+refs/heads/$VCSH_BRANCH:refs/remotes/origin/$VCSH_BRANCH"
+
+[.oh-my-zsh]
+checkout = sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
