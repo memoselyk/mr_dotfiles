@@ -1,5 +1,5 @@
-[$HOME/.config/vcsh/repo.d/vim.git]
-lib = VCSH_BRANCH="vim"
-checkout = vcsh clone -b $VCSH_BRANCH https://github.com/memoselyk/mr_dotfiles.git vim
+[$HOME/.config/vcsh/repo.d/dot-vim.git]
+lib = VCSH_BRANCH="dot-vim"
+checkout = vcsh clone -b $VCSH_BRANCH https://github.com/memoselyk/mr_dotfiles.git dot-vim
 pre_update = git config --unset-all remote.origin.fetch && \
     git config --add remote.origin.fetch "+refs/heads/$VCSH_BRANCH:refs/remotes/origin/$VCSH_BRANCH"
