@@ -6,3 +6,6 @@ vim.opt.relativenumber = true
 
 -- Avoid layout shift when icons appear.
 vim.opt.signcolumn = 'yes'
+
+-- Map spacebar as leader
+vim.g.mapleader = " "
