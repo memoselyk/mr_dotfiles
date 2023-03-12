@@ -20,3 +20,6 @@ Add this package to the `mr` repo/config.
 ```sh
 sudo apt-get install build-essential -y
 ```
+3. For `ttserver` and `eslint` LSP
+
+- `npm` in path
