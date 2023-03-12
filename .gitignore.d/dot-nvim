@@ -1,0 +1,9 @@
+*
+!/.gitignore.d
+!/.gitignore.d/dot-nvim
+!/.config
+!/.config/mr
+!/.config/mr/3rd_party.d
+!/.config/mr/3rd_party.d/nvim-*
+!/.config/nvim
+!/.config/nvim/**/*

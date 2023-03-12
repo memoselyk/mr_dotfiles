@@ -1,4 +1,4 @@
-# Vim config managed with VCSH/mr
+# nVim config managed with VCSH/mr
 
 ## Usage
 
