@@ -28,3 +28,10 @@ checkout =
     git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-easymotion.git https://github.com/easymotion/vim-easymotion ~/.vim/bundle/vim-easymotion
 push = :
 order = 15
+
+# surround.vim: quoting/parenthesizing made simple
+[.vim/bundle/surround.vim]
+checkout =
+    git clone --separate-git-dir ~/.config/vcsh/repo.d/vim-surround.git https://github.com/tpope/vim-surround ~/.vim/bundle/surround.vim
+push = :
+order = 15
