@@ -61,6 +61,8 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  use 'tpope/vim-fugitive'
   -- }}}
 
   -- Automatically set up your configuration after cloning packer.nvim
