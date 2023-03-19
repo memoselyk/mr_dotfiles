@@ -1,0 +1,5 @@
+[.config/zsh/themes/imp]
+checkout = git clone --depth=1 https://github.com/igormp/Imp.git ~/.config/zsh/themes/imp && \
+  ln -s ~/.config/zsh/themes/imp/imp.zsh-theme ~/.oh-my-zsh/custom/themes/imp.zsh-theme
+push = :
+order = 12
