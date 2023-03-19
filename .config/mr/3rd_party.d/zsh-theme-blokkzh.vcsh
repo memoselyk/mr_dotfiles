@@ -1,0 +1,5 @@
+[.config/zsh/themes/blokkzh]
+checkout = git clone --depth=1 https://github.com/KorvinSilver/blokkzh.git ~/.config/zsh/themes/blokkzh && \
+  ln -s ~/.config/zsh/themes/blokkzh/blokkzh.zsh-theme ~/.oh-my-zsh/custom/themes/blokkzh.zsh-theme
+push = :
+order = 12
