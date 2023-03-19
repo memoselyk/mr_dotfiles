@@ -1,0 +1,5 @@
+[.config/zsh/themes/kinda-fishy]
+checkout = git clone --depth=1 https://github.com/folixg/kinda-fishy-theme.git ~/.config/zsh/themes/kinda-fishy && \
+  ln -s ~/.config/zsh/themes/kinda-fishy/kinda-fishy.zsh-theme ~/.oh-my-zsh/custom/themes/kinda-fishy.zsh-theme
+push = :
+order = 12
