@@ -1,0 +1,7 @@
+[.config/zsh/themes/nikhilkmr300]
+checkout = git clone --depth=1 https://github.com/nikhilkmr300/omz-themes.git ~/.config/zsh/themes/nikhilkmr300 && \
+  ln -s ~/.config/zsh/themes/nikhilkmr300/themes/matte-black-yellow.zsh-theme ~/.oh-my-zsh/custom/themes/ && \
+  ln -s ~/.config/zsh/themes/nikhilkmr300/themes/color-input.zsh-theme ~/.oh-my-zsh/custom/themes/ && \
+  ln -s ~/.config/zsh/themes/nikhilkmr300/themes/short.zsh-theme ~/.oh-my-zsh/custom/themes/
+push = :
+order = 12
