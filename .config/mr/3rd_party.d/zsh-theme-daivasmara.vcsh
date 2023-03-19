@@ -1,0 +1,5 @@
+[.config/zsh/themes/daivasmara]
+checkout = git clone https://github.com/Daivasmara/daivasmara.zsh-theme.git ~/.config/zsh/themes/daivasmara && \
+  ln -s ~/.config/zsh/themes/daivasmara/daivasmara.zsh-theme ~/.oh-my-zsh/custom/themes/daivasmara.zsh-theme
+push = :
+order = 12
