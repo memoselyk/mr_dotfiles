@@ -1,0 +1,5 @@
+[.config/zsh/themes/bullet-train]
+checkout = git clone https://github.com/caiogondim/bullet-train.zsh.git ~/.config/zsh/themes/bullet-train && \
+  ln -s ~/.config/zsh/themes/bullet-train/bullet-train.zsh-theme ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme
+push = :
+order = 12
