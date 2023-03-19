@@ -1,0 +1,5 @@
+[.config/zsh/themes/021011]
+checkout = git clone https://github.com/guesswhozzz/021011.zsh-theme.git ~/.config/zsh/themes/021011 && \
+  ln -s ~/.config/zsh/themes/021011/021011.zsh-theme ~/.oh-my-zsh/custom/themes/021011.zsh-theme
+push = :
+order = 12
