@@ -1,0 +1,5 @@
+[.config/zsh/themes/spaceship]
+checkout = git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git ~/.config/zsh/themes/spaceship && \
+  ln -s ~/.config/zsh/themes/spaceship/spaceship.zsh-theme ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+push = :
+order = 12
