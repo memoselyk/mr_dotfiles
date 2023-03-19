@@ -1,0 +1,5 @@
+[.config/zsh/themes/enlightenment]
+checkout = git clone --depth=1 https://github.com/w33tmaricich/enlightenment.git ~/.config/zsh/themes/enlightenment && \
+  ln -s ~/.config/zsh/themes/enlightenment/enlightenment.zsh-theme ~/.oh-my-zsh/custom/themes/enlightenment.zsh-theme
+push = :
+order = 12
