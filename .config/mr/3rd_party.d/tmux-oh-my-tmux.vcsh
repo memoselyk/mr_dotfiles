@@ -1,0 +1,4 @@
+[.tmux]
+checkout = git clone --depth=1 https://github.com/gpakosz/.tmux.git ~/.tmux
+push = :
+order = 12
