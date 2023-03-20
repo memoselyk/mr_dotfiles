@@ -7,4 +7,3 @@
 !/.config/mr/3rd_party.d/tmux-*
 !/.config/tmux
 !/.config/tmux/**/*
-!/.tmux.conf

@@ -1,0 +1,4 @@
+[.tmux/plugins/tpm]
+checkout = git clone --depth=1 https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+push = :
+order = 12
