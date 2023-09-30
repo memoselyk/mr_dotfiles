@@ -372,6 +372,7 @@ require('lazy').setup {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format lua code
+        'eslint_d', -- js linter
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -392,6 +393,7 @@ require('lazy').setup {
 
   { -- Autoformat
     'stevearc/conform.nvim',
+    event = { 'BufReadPre', 'BufNewFile' },
     opts = {
       notify_on_error = false,
       format_on_save = {
@@ -408,6 +410,13 @@ require('lazy').setup {
         -- javascript = { { "prettierd", "prettier" } },
       },
     },
+    -- vim.keymap.set({ "n", "v" }, "<leader>mp", function()
+    --   conform.format({
+    --     lsp_fallback = true,
+    --     async = false,
+    --     timeout_ms = 1000,
+    --   })
+    -- end, { desc = "Format file or range (in visual mode)" })
   },
 
   { -- Autocompletion
