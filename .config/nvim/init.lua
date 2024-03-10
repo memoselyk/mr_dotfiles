@@ -80,6 +80,30 @@ require('lazy').setup {
     end,
   },
 
+  -- typecraft's lsp-config.lua
+  {
+    'williamboman/mason.nvim',
+    config = true,
+  },
+  {
+    'williamboman/mason-lspconfig.nvim',
+    opts = {
+      ensure_installed = { 'lua_ls' },
+    },
+    config = true,
+  },
+  {
+    'neovim/nvim-lspconfig',
+    config = function()
+      local lspconfig = require 'lspconfig'
+      lspconfig.lua_ls.setup {}
+      vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
+      vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
+      -- vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
+      vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
+    end,
+  },
+
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is
