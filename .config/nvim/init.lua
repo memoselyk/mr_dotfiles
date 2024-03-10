@@ -112,6 +112,22 @@ require('lazy').setup {
     end,
   },
 
+  { -- File tree visualizer
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v3.x',
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
+      'MunifTanjim/nui.nvim',
+      -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+    },
+    config = function()
+      -- [[ Configure Neotree ]]
+      vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal right<CR>')
+      vim.keymap.set('n', '<leader>bf', ':Neotree buffers reveal float<CR>')
+    end,
+  },
+
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- put them in the right spots if you want.
