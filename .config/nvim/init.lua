@@ -101,27 +101,31 @@ require('lazy').setup {
     end,
   },
 
-  -- typecraft's lsp-config.lua
-  {
-    'williamboman/mason.nvim',
-    config = true,
-  },
-  {
-    'williamboman/mason-lspconfig.nvim',
-    opts = {
-      ensure_installed = { 'lua_ls' },
-    },
-    config = true,
-  },
-  {
+  { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
+    dependencies = {
+      'williamboman/mason.nvim',
+      'williamboman/mason-lspconfig.nvim',
+    },
     config = function()
       local lspconfig = require 'lspconfig'
       lspconfig.lua_ls.setup {}
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
-      -- vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
+      -- vim.keymap.set('n', '<leader>gr', vim.lsp.buf.references, {})
       vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
+
+      -- Ensure the servers and tools above are installed
+      --  To check the current status of installed tools and/or manually install
+      --  other tools, you can run
+      --    :Mason
+      --
+      --  You can press `g?` for help in this menu
+      require('mason').setup()
+
+      require('mason-lspconfig').setup {
+        ensure_installed = { 'lua_ls' },
+      }
     end,
   },
 
