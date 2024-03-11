@@ -236,6 +236,11 @@ require('lazy').setup {
       'L3MON4D3/LuaSnip',
       'saadparwaiz1/cmp_luasnip',
 
+      -- Adds other completion capabilities.
+      --  nvim-cmp does not ship with all sources by default. They are split
+      --  into multiple repos for maintenance purposes.
+      'hrsh7th/cmp-buffer',
+
       -- If you want to add a bunch of pre-configured snippets,
       --    you can use this plugin to help you. It even has snippets
       --    for various frameworks/libraries/etc. but you will have to
@@ -277,11 +282,10 @@ require('lazy').setup {
           ['<C-Space>'] = cmp.mapping.complete(),
           ['<C-e>'] = cmp.mapping.abort(),
         },
-        sources = cmp.config.sources({
+        sources = cmp.config.sources {
           { name = 'luasnip' }, -- For luasnip users.
-        }, {
           { name = 'buffer' },
-        }),
+        },
       }
     end,
   },
