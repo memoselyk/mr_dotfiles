@@ -1,0 +1,10 @@
+*
+!/.gitignore.d
+!/.gitignore.d/dot-tmux
+!/.config
+!/.config/mr
+!/.config/mr/3rd_party.d
+!/.config/mr/3rd_party.d/tmux-*
+!/.config/tmux
+!/.config/tmux/**/*
+!/.tmux.conf
