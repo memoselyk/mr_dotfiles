@@ -99,6 +99,19 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+if [ ! -z "$(command -v fzf)" ]; then
+  # Set up fzf key bindings and fuzzy completion
+  eval "$(fzf --zsh)"
+
+  # Use C-H for fzf history search, to keep C-R for histdb
+  zle     -N            fzf-history-widget
+  bindkey -M emacs '^H' fzf-history-widget
+  bindkey -M vicmd '^H' fzf-history-widget
+  bindkey -M viins '^H' fzf-history-widget
+else
+  echo " ❗️ fzf not installed"
+fi
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
