@@ -88,7 +88,17 @@ plugins=(
   zsh-autosuggestions
 )
 
-# Plugin settings and setup
+# Plugin settings and conditional setup
+# NOTE: Plugins usually detect their requirements, but I want consistent
+#       messages about missing dependencies
+
+if [ ! -z "$(command -v zoxide)" ]; then
+  # For zoxide+zsh integration
+  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/zoxide
+  plugins+=(zoxide)
+else
+  echo " ❗️ zoxide not installed"
+fi
 
 # Config ssh-agent plugin
 plugins+=(ssh-agent)
