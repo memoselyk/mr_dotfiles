@@ -88,6 +88,13 @@ plugins=(
   zsh-autosuggestions
 )
 
+# Plugin settings and setup
+
+# Config ssh-agent plugin
+plugins+=(ssh-agent)
+zstyle :omz:plugins:ssh-agent lifetime 2h
+zstyle :omz:plugins:ssh-agent lazy yes
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
