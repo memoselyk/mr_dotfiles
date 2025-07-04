@@ -1,0 +1,5 @@
+*
+!/.gitignore.d
+!/.gitignore.d/dot-ssh
+!/.ssh
+!/.ssh/config
