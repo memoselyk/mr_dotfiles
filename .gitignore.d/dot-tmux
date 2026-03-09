@@ -6,4 +6,8 @@
 !/.config/mr/3rd_party.d
 !/.config/mr/3rd_party.d/tmux-*
 !/.tmux.conf
-
+!/.tmux/
+!/.tmux/plugins/
+!/.tmux/plugins/tmux/
+!/.tmux/plugins/tmux/scripts/
+!/.tmux/plugins/tmux/scripts/vmip.sh
